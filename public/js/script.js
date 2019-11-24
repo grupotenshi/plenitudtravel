@@ -432,12 +432,13 @@ $document.ready(function () {
 	 * Page loader
 	 * @description Enables Page loader
 	 */
+
 	if (plugins.pageLoader.length > 0) {
 		var loader = setTimeout(function () {
 			plugins.pageLoader.addClass("loaded");
 			plugins.pageLoader.fadeOut(500, function () {
 				$(this).remove();
-			});
+			;});
 
 			$window.trigger("resize");
 		}, 1000);
