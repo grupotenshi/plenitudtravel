@@ -7,7 +7,6 @@ function App() {
 
    <div className="page">
 
-
        <header className="section page-header">
 
            <div className="rd-navbar-wrap rd-navbar-corporate">
@@ -41,7 +40,12 @@ function App() {
 
                            <button className="rd-navbar-toggle" data-rd-navbar-toggle=".rd-navbar-nav-wrap"><span></span></button>
 
-                           <div className="rd-navbar-brand"><a className="brand-name"><img className="logo-default" src="images/logo-default-208x46.png" alt="" width="208" height="46" /></a></div>
+                           <div className="rd-navbar-brand m-auto mt-lg-2 paddingNavBar">
+                             <a className="brand-name">
+                                <img className="logo-default d-none d-lg-block" src="images/logo-default-208x46.png" alt="" width="208" height="46" />
+                                <img className="logo-default d-lg-none m-auto" src="images/logonav-resp.png" alt="" width="208" height="46" />
+                             </a>
+                           </div>
                        </div>
                        <div className="rd-navbar-aside-center">
                            <div className="rd-navbar-nav-wrap">
